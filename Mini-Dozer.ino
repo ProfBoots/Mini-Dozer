@@ -22,7 +22,7 @@ Servo ripperServo;
 
 #define leftBladeTilt0 16   // \ "Aux1" on PCB. Used for controlling auxillary motor or lights.  Keep in mind this will always breifly turn on when the model is powered on.
 #define leftBladeTilt1 17   // /
-#define rightBladeTilt0 5  // \ "AUX2" on PCB. Used for controlling auxillary motors or lights.
+#define rightBladeTilt0 19  // \ "AUX2" on PCB. Used for controlling auxillary motors or lights.
 #define rightBladeTilt1 18   // /
 #define bladeTilt0 25       // \ "Aux3" on PCB. Used for controlling auxillary motors or lights.
 #define bladeTilt1 26       // /
