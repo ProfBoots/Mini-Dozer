@@ -109,7 +109,7 @@ void processGamepad(ControllerPtr ctl) {
   } else if (ctl->l2() == 1) {
     digitalWrite(leftBladeTilt0, LOW);
     digitalWrite(leftBladeTilt1, HIGH);
-  } else if (ctl->l1() == 0 || ctl->r2() == 0) {
+  } else if (ctl->l1() == 0 || ctl->l2() == 0) {
     digitalWrite(leftBladeTilt0, LOW);
     digitalWrite(leftBladeTilt1, LOW);
   }
