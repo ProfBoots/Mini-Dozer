@@ -212,10 +212,7 @@ void processControllers() {
 
 // Arduino setup function. Runs in CPU 1
 void setup() {
-  pinMode(rightBladeTilt0, OUTPUT);
-  pinMode(rightBladeTilt1, OUTPUT);
-  digitalWrite(rightBladeTilt0, LOW);
-  digitalWrite(rightBladeTilt1, LOW);
+  pinMode(rightBladeTilt0, INPUT_PULLUP);
   Serial.begin(115200);
   //   put your setup code here, to run once:
   Serial.printf("Firmware: %s\n", BP32.firmwareVersion());
@@ -237,6 +234,8 @@ void setup() {
   pinMode(ripperMotor1, OUTPUT);
   pinMode(leftBladeTilt0, OUTPUT);
   pinMode(leftBladeTilt1, OUTPUT);
+  pinMode(rightBladeTilt0, OUTPUT);
+  pinMode(rightBladeTilt1, OUTPUT);
   pinMode(bladeTilt0, OUTPUT);
   pinMode(bladeTilt1, OUTPUT);
   pinMode(LT1, OUTPUT);
@@ -251,6 +250,8 @@ void setup() {
   digitalWrite(ripperMotor1, LOW);
   digitalWrite(leftBladeTilt0, LOW);
   digitalWrite(leftBladeTilt1, LOW);
+  digitalWrite(rightBladeTilt0, LOW);
+  digitalWrite(rightBladeTilt1, LOW);
   digitalWrite(bladeTilt0, LOW);
   digitalWrite(bladeTilt1, LOW);
   digitalWrite(LT1, LOW);
